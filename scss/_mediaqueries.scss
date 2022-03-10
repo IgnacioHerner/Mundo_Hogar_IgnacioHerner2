@@ -1,0 +1,113 @@
+@media (max-width:800px){
+    .container__tools {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: repeat(2, 70% 30%);
+        grid-template-areas: "container__img container__carrito"
+                             "container__buscador container__buscador"
+                             "navbar navbar";
+    }
+
+    .container__img{
+        width: 70%;
+    }
+
+    .container__cuenta{
+        width: 50px;
+        gap: 2rem;
+    }
+
+    .conteiner__buscador{
+        display: flex;
+        align-items: center;
+    }
+    .barra__buscadora{
+        width: 90%;
+    }
+
+    .barra__buscadora--btn{
+        padding: 12px 5px;
+    }
+    
+
+    .navegacion__productos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav__items{
+        display: flex;
+        padding-left: none;
+        padding-right: 100px;
+        padding-bottom: 12px;
+    }
+    .contenedor__main--h2{
+        font-size: 25px;
+        margin-top: 60px;
+    }
+    .logos{
+        width: 40px;
+    }
+    .catalogo{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+
+@media (max-width:500px){
+
+    .container__tools {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: repeat(2, 70% 30%);
+        grid-template-areas: "container__img container__carrito"
+                             "container__buscador container__buscador"
+                             "navbar navbar";
+    }
+    .container__img{
+        width: 70%;   
+    }
+
+    .container__cuenta{
+        width: 40px;
+        gap: 1rem;
+    }
+
+    .barra__buscadora{
+        width: 80%;
+    }
+
+    .catalogo{
+        grid-template-columns: auto;
+    }
+    
+    .btn__form{
+        padding: 10px 40px;
+        font-size: 16px;
+    }
+
+    .contenedor__formulario{
+        display: inline-block;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+
+    .formulario input[type=text]{
+        width: 350px;
+
+    }
+    .formulario input[type=email]{
+        width: 350px;
+
+    }
+
+    .formulario input[type=number]{
+        width: 350px;
+    }
+
+    textarea{
+        width: 350px
+    }
+
+}

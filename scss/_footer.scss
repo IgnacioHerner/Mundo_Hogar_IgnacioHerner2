@@ -1,0 +1,25 @@
+.contenedor__footer--redes{
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer .navegacion{
+    border-bottom: #545454 1px solid;
+    border-top: #545454 1px solid ; 
+}
+
+.logos{
+    display: inline;
+    width: 50px;
+    padding-right: 10px;
+}
+
+.derechos__reservados{
+    font-size: 12px;
+    left: 50px;
+    color:black;
+}
+
+.condiciones{
+    color: #8C8C8C;
+}
