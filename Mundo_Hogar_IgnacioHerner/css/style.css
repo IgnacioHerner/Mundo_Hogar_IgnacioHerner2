@@ -167,12 +167,18 @@ textarea {
 .formulario--comentario {
   color: #8C8C8C; }
 
-.btn__form {
+.btn__form, .btn__form-aceptar, .btn__form-cancelar {
   background-color: #dc047c;
   border: none;
   color: white;
   padding: 15px 20px;
   font-size: 16px; }
+
+.btn__form-aceptar {
+  background-color: green; }
+
+.btn__form-cancelar {
+  background-color: red; }
 
 @media (max-width: 800px) {
   .container__tools {
@@ -224,7 +230,7 @@ textarea {
     width: 80%; }
   .catalogo {
     grid-template-columns: auto; }
-  .btn__form {
+  .btn__form, .btn__form-aceptar, .btn__form-cancelar {
     padding: 10px 40px;
     font-size: 16px; }
   .contenedor__formulario {

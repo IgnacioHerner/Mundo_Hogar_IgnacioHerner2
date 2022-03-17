@@ -1,40 +1,39 @@
 .contenedor__formulario{
-    display: flex;
-    flex-direction: column;
+    @include flex_column;
     align-items: center;
     margin-bottom: 100px;
 }
 
 .formulario input[type=text]{
     width: 650px;
-    padding: 15px 22px;
-    margin: 5px 5px;
-    border: 2px solid #eaeaea;
-    border-radius: 7px;
+    padding: map-get($estilosForms,paddingForm);
+    margin: map-get($estilosForms, marginForm);
+    border: map-get($estilosForms, borderForm);
+    border-radius: map-get($estilosForms, borderRadiusForm);
 }
 
 .formulario input[type=email]{
     width: 650px;
-    padding: 15px 22px;
-    margin: 5px 5px;
-    border: 2px solid #eaeaea;
-    border-radius: 7px;
+    padding: map-get($estilosForms,paddingForm);
+    margin: map-get($estilosForms, marginForm);
+    border: map-get($estilosForms, borderForm);
+    border-radius: map-get($estilosForms, borderRadiusForm);
 }
 
 .formulario input[type=number]{
     width: 650px;
-    padding: 15px 22px;
-    margin: 5px 5px;
-    border: 2px solid #eaeaea;
-    border-radius: 7px;
+    padding: map-get($estilosForms,paddingForm);
+    margin: map-get($estilosForms, marginForm);
+    border: map-get($estilosForms, borderForm);
+    border-radius: map-get($estilosForms, borderRadiusForm);
 }
 
 textarea{
     width: 703px;
     height: 150px;
     box-sizing: border-box;
-    border: 2px solid #eaeaea;
-    border-radius: 7px;
+    border: map-get($estilosForms, borderForm);
+    border-radius: map-get($estilosForms, borderRadiusForm);
     resize: none;
     margin-top: 12px;
 }
@@ -50,4 +49,14 @@ textarea{
     color: white;
     padding: 15px 20px;
     font-size: 16px;
+}
+
+.btn__form-aceptar{
+    @extend .btn__form;
+    background-color: green;
+}
+
+.btn__form-cancelar{
+    @extend .btn__form;
+    background-color: red;
 }

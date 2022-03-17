@@ -33,9 +33,7 @@ header {
 
 .container__tools{
     grid-area: container__tools;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include flex_aling_space-between;
 }
 
 
